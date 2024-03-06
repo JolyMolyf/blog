@@ -13,7 +13,7 @@ const Header = () => {
         <div>
             <div>
                 Sr. <p className='inline-block text-mainViolet'>Software Engineer</p> currently working as Tech Lead of the Doc Squad at Algolia. 
-                I mostly do front-end development, and I'm a Vue.js and CSS nerd. I can't shut up about 
+                I mostly do front-end development, and I am a Vue.js and CSS nerd. I can't shut up about 
                 test-driven development and utility-first CSS. I also share what | learn on my blog frontstufrio, 
                 or at meetups and conferences.
             </div>
