@@ -7,7 +7,19 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+   
+    textColor: {
+      'mainViolet': '#A1B5D8',
+      'secondaryBlue': '#33658A'
+
+    },
+
     extend: {
+      textColor: {
+        'mainViolet': '#A1B5D8',
+        'secondaryBlue': '#33658A'
+
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
