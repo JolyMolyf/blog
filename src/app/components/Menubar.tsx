@@ -1,4 +1,5 @@
 import React from 'react'
+import Downloadicon from './common/icons/Downloadicon'
 
 interface Props {}
 
@@ -11,8 +12,9 @@ const Menubar = () => {
         </div>
       </div>
       <div className='header-left flex flex-row justify-between'>
-        <div className='header-item mx-10 flex flex-row'>
-          <p className='hover-underline-animation'>CV</p>
+        <div className='header-item mx-10 flex flex-row items-center'>
+          <p className='hover-underline-animation mx-2'>CV</p>
+          <Downloadicon/>
         </div>
         <div className='header-item mx-10 flex flex-row'>
           <p className='hover-underline-animation'>Blog</p>
