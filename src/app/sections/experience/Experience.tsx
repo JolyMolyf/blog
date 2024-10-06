@@ -4,9 +4,12 @@ import React from 'react';
 interface IProps {}
 
 const Experience = () => {
-  return (<div className='max-w-[1200px] m-auto flex flex-row justify-between'>
-    <CustomTimeline/>
-  </div>)
+  return (
+    <div className='max-w-[1200px]'>
+      <p className='text-6xl font-bold'>Experience</p>
+      <CustomTimeline/>
+    </div>
+  )
 }
 
 export default Experience

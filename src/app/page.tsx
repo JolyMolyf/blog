@@ -5,9 +5,13 @@ import Experience from './sections/experience/Experience'
 interface Props {}
 
 const page = () => {
-  return <div>
-    <Header/>
-    <Experience/>
+    return <div>
+        <section>
+            <Header/>
+        </section>
+        <section>
+            <Experience/>
+        </section>
   </div>
 }
 
