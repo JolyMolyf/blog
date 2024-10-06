@@ -1,5 +1,5 @@
 import CustomTimeline from '@/app/components/common/Timeline/CustomTimeline'
-import React from 'react'
+import React from 'react';
 
 interface IProps {}
 

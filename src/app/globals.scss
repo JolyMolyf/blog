@@ -5,10 +5,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css");
 
-
+$grey: #191919;
 $mainViolet: #A1B5D8;
 $secondaryBlue: #33658A;
-$lightBlue: #E1EDF8;
+$lightBlue: #eff7ff;
 
 body {
   margin: 0;
@@ -29,7 +29,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: $mainViolet;
+  background-color: $lightBlue;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }

@@ -1,35 +1,39 @@
 import FeatureCard from '@/app/components/featureCard/FeatureCard';
 import React from 'react';
 import './header.scss';
+import { skillSet } from '@/app/utils/consts/skillSet';
 
 interface Props {}
 
 const Header = () => {
-  return <div className='header max-w-[1200px] m-auto flex flex-row justify-between'>
-    <div className='header-left-wrapper max-w-[45%] mt-[25vh]'>
+  return (<div className='header max-w-[1200px] m-auto flex flex-row justify-between'>
+    <div className='header-left-wrapper max-w-[45%]'>
         <div className='mb-[8vh]'>
             <p className='text-4xl font-light mb-[0px]'>Hello, I am</p>
             <p className='text-mainViolet text-[64px] font-bold'>Seabstian</p>
-            <p className='text-xs'>Javascript developer</p>
+            <p className='text-s font-light'>Javascript developer</p>
         </div>
         <div>
             <div>
-                Sr. <p className='inline-block text-mainViolet'>Software Engineer</p> currently working as Tech Lead of the Doc Squad at Algolia. 
-                I mostly do front-end development, and I am a Vue.js and CSS nerd. I ca not shut up about 
-                test-driven development and utility-first CSS. I also share what | learn on my blog frontstufrio, 
-                or at meetups and conferences.
+                <p className='text-xl'>
+                    I am a <span className='inline-block text-mainViolet'> Javascript developer with 5 years </span> of comercial experience, specializing in React and TypeScript. 
+                    For last 3 years I have been working on fintech solutions for one of the biggest banks in the world.  I hold a Bachelors degree in Software Engineering, 
+                    which has given me a strong foundation in technical expertise and user experience design. 
+                </p>
             </div>
         </div>
     </div>
     <div className='header-right-wrapper mt-[10vh]'>
-      <FeatureCard title='JS'/>
-      <FeatureCard title='UI'/>
-      <FeatureCard title='UX'/>
-      <FeatureCard title='4' subTitle='Years' bottom='experience' />
-      <FeatureCard title='10+' bottom='Projects'/>
-      <FeatureCard title='DB'/>
+        { skillSet.map((skill, index) => {
+            return (
+                <div key={index}>
+                    <FeatureCard skill={skill}/>
+                </div>
+            )
+        }) }
     </div>
   </div>
+  )
 }
 
 export default Header

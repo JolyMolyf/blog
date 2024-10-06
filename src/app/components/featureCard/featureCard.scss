@@ -1,4 +1,5 @@
 @import '../../globals.scss';
+
 .featureCard {
     width: 210px;
     height: 200px;
@@ -12,7 +13,7 @@
     flex-wrap: wrap;
 
     &-wrapper {
-        color: white;
+        color: $lightBlue;
 
         &-title {
             display: flex;

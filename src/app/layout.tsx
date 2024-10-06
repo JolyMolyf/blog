@@ -1,4 +1,4 @@
-import Menubar from "./components/Menubar";
+import Menubar from "./components/common/menubar/Menubar";
 import "./globals.scss";
 
 export const metadata = {
