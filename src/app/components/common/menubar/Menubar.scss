@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    filter: drop-shadow(5px 5px 15px v.$mainViolet);
+    filter: drop-shadow(5px 5px 7px v.$mainViolet);
 
     &-item {
         &-clickable {

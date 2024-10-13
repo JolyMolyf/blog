@@ -10,10 +10,10 @@ $mainViolet: #A1B5D8;
 $secondaryBlue: #33658A;
 $lightBlue: #eff7ff;
 
-html {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-}
+// html {
+//   // scroll-snap-type: y mandatory;
+//   // scroll-behavior: smooth;
+// }
 
 body {
   margin: 0;
@@ -23,7 +23,7 @@ body {
 
 section {
   height: 100vh;
-  scroll-snap-align: center;
+  // scroll-snap-align: center;
 }
 
 .hover-underline-animation {
@@ -47,4 +47,32 @@ section {
 .hover-underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.separator {
+  margin: 2.5px;
+  height: 2px;
+  width: 10px;
+  background-color: $mainViolet;
+}
+
+.section-header {
+  color: $mainViolet;
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.main-text {
+  font-size: 16px;
+  color: $grey;
+}
+
+.highlighted-main-text {
+  font-size: 16px;
+  color: $mainViolet;
+}
+
+.small-text {
+  font-size: 10px;
+  color: $grey;
 }
