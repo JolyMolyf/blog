@@ -4,7 +4,8 @@ import { ITimeLineItem } from './CustomTimeline';
 import moment from 'moment';
 import CalendarIcon from './CalendarIcon';
 import './timeline.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import TimePeriodDisplay from './TimePeriodDisplay';
+import LocationDisplay from './LocationDisplay';
 
 interface IProps {
     timeLineItem: ITimeLineItem
@@ -19,26 +20,18 @@ const CustomTimeLineItem = (props:IProps) => {
             <div className="mb-10 ms-6">            
                 <div className='timeline-header'>
                     <CalendarIcon/>
-                    <div className="text-lg font-semibold timeline-header-item">
-                        {timeLineItem.companyName}
-                    </div>
-                    <div className='timeline-header-item'>
-                        <p className="block text-sm font-normal leading-none">{moment(timeLineItem.startDate.toISOString()).format('MM-YYYY')}</p>
-                        <div className='separator'/>
-                        <p className="block text-sm font-normal leading-none">{timeLineItem?.endDate ? moment(timeLineItem?.endDate?.toISOString()).format('MM-YYYY') : 'Now'}</p>
-                    </div>
+                    <p className="section-medium-header font-semibold timeline-header-item">{timeLineItem.companyName}</p>
+                    <p className='section-small-header'>Project {timeLineItem.projectName}</p>
                     <p className='timeline-header-item highlighted-main-text'>{timeLineItem.role}</p>
-                    <div className='timeline-header-item'>
-                        <img src='./icons/location-dot-solid.svg'></img>
-                        <p className=''>{timeLineItem.location}</p>
-                    </div>
+                    <TimePeriodDisplay startDate={timeLineItem.startDate} endDate={timeLineItem.endDate}/>
+                   <LocationDisplay location={timeLineItem.location}/>
                 </div>
                 <div className='timeline-achievements'>
                     {timeLineItem.bulletPoints.map((bulletPoint, index) => {
                         return (
                             <div className='timeline-achievements-item' key={index}>
                                 <img src='./icons/fingerprint-solid.svg'/>
-                                <p className=''>
+                                <p className='main-text'>
                                     {bulletPoint}
                                 </p>
                             </div>
