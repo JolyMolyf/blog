@@ -84,14 +84,14 @@ const experieceDate:Array<ITimeLineItem> = [
 const CustomTimeline = () => {
   return (
     <div className='m-auto flex flex-row justify-between'>
-            <div className="timeline relative border-s border-gray-200 dark:border-gray-700">       
-            {experieceDate.map((timeLineItem, index) => {
-                return(
-                    <div key={index}>
-                        <CustomTimeLineItem timeLineItem={timeLineItem} />
-                    </div>
-                )
-            })}           
+        <div className="timeline relative border-s border-gray-200 dark:border-gray-700">       
+        {experieceDate.map((timeLineItem, index) => {
+            return(
+                <div key={index}>
+                    <CustomTimeLineItem timeLineItem={timeLineItem} />
+                </div>
+            )
+        })}           
         </div>
     </div>
   )

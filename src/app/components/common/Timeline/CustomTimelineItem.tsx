@@ -1,19 +1,23 @@
-import React from 'react'
-import Downloadicon from '../icons/Downloadicon'
+'use client'
+import React, { useState } from 'react'
 import { ITimeLineItem } from './CustomTimeline';
-import moment from 'moment';
 import CalendarIcon from './CalendarIcon';
 import './timeline.scss';
 import TimePeriodDisplay from './TimePeriodDisplay';
 import LocationDisplay from './LocationDisplay';
+import Button from '../button/Button';
 
 interface IProps {
     timeLineItem: ITimeLineItem
 }
 
 const CustomTimeLineItem = (props:IProps) => {
-    const {timeLineItem } = props;
+    const { timeLineItem } = props;
+    const [ isCollapsed, setIsCollapsed ] = useState(true);
 
+    const handleClick = () => {
+        setIsCollapsed(!isCollapsed)
+    }
 
     return (
         <div>
@@ -26,10 +30,11 @@ const CustomTimeLineItem = (props:IProps) => {
                     <TimePeriodDisplay startDate={timeLineItem.startDate} endDate={timeLineItem.endDate}/>
                    <LocationDisplay location={timeLineItem.location}/>
                 </div>
-                <div className='timeline-achievements'>
+                <div className='timeline-achievements' style={{height: isCollapsed ? 40 : ''}}>
+                    <p className='section-small-header'>Key Achievements:</p>
                     {timeLineItem.bulletPoints.map((bulletPoint, index) => {
                         return (
-                            <div className='timeline-achievements-item' key={index}>
+                            <div className='timeline-achievements-item' key={index} >
                                 <img src='./icons/fingerprint-solid.svg'/>
                                 <p className='main-text'>
                                     {bulletPoint}
@@ -37,6 +42,9 @@ const CustomTimeLineItem = (props:IProps) => {
                             </div>
                         )
                     })}
+                </div>
+                <div className='timeline-actions'>
+                    <Button label={ isCollapsed ? 'Expand' : 'Collapse' } icon={isCollapsed ? './icons/chevron-down-solid.svg' : './icons/chevron-up-solid.svg'} onClick={handleClick}/>
                 </div>
             </div>
         </div>
