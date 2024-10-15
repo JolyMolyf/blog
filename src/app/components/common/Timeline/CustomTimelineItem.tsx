@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import { ITimeLineItem } from './CustomTimeline';
+import { ITimeLineItem } from '@/app/sections/experience/Experience';
 import CalendarIcon from './CalendarIcon';
 import './timeline.scss';
 import TimePeriodDisplay from './TimePeriodDisplay';
@@ -24,14 +24,18 @@ const CustomTimeLineItem = (props:IProps) => {
             <div className="mb-10 ms-6">            
                 <div className='timeline-header'>
                     <CalendarIcon/>
-                    <p className="section-medium-header font-semibold timeline-header-item">{timeLineItem.companyName}</p>
-                    <p className='section-small-header'>Project {timeLineItem.projectName}</p>
-                    <p className='timeline-header-item highlighted-main-text'>{timeLineItem.role}</p>
-                    <TimePeriodDisplay startDate={timeLineItem.startDate} endDate={timeLineItem.endDate}/>
-                   <LocationDisplay location={timeLineItem.location}/>
+                    <div className='timeline-header-wrapper'>
+                        <p className="section-medium-header timeline-header-wrapper-item">{timeLineItem.companyName}</p>
+                        <p className='timeline-header-wrapper-item section-small-header'>Project "{timeLineItem.projectName}"</p>
+                        <TimePeriodDisplay className='timeline-header-wrapper-item' startDate={timeLineItem.startDate} endDate={timeLineItem.endDate}/>
+                        <LocationDisplay className='timeline-header-wrapper-item' location={timeLineItem.location}/>
+                    </div>
+                    <div className='timeline-header-wrapper'>
+                        <p className='section-small-header-violet timeline-header-wrapper-item'>{timeLineItem.role}</p>
+                    </div>
+                    
                 </div>
-                <div className='timeline-achievements' style={{height: isCollapsed ? 40 : ''}}>
-                    <p className='section-small-header'>Key Achievements:</p>
+                <div className='timeline-achievements' style={{height: isCollapsed ? 42 : ''}}>
                     {timeLineItem.bulletPoints.map((bulletPoint, index) => {
                         return (
                             <div className='timeline-achievements-item' key={index} >
