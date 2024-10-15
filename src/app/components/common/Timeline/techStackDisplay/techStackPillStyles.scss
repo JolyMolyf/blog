@@ -1,0 +1,17 @@
+@use '../../../../globals.scss' as v;
+
+.techStackPill {
+    height: 25px;
+    background-color: v.$mainViolet;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+
+    &:hover, &:focus &:active {
+    
+        transform: scale(1.1);
+        background-color: v.$secondaryBlue;
+    }
+}

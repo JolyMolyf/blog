@@ -1,5 +1,6 @@
 import React from 'react'
-import TechStackPill from './techStackPill';
+import TechStackPill from './TechStackPill';
+import './techStackDisplayStyles.scss'
 
 interface Props {
   stack: Array<string>

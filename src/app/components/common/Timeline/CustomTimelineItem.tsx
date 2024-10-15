@@ -6,6 +6,7 @@ import './timeline.scss';
 import TimePeriodDisplay from './TimePeriodDisplay';
 import LocationDisplay from './LocationDisplay';
 import Button from '../button/Button';
+import TechStackisplay from './techStackDisplay/TechStackDisplay';
 
 interface IProps {
     timeLineItem: ITimeLineItem
@@ -29,6 +30,9 @@ const CustomTimeLineItem = (props:IProps) => {
                         <p className='timeline-header-wrapper-item section-small-header'>Project "{timeLineItem.projectName}"</p>
                         <TimePeriodDisplay className='timeline-header-wrapper-item' startDate={timeLineItem.startDate} endDate={timeLineItem.endDate}/>
                         <LocationDisplay className='timeline-header-wrapper-item' location={timeLineItem.location}/>
+                    </div>
+                    <div className='timeline-header-wrapper'>
+                        <TechStackisplay stack={timeLineItem.techStack}/>
                     </div>
                     <div className='timeline-header-wrapper'>
                         <p className='section-small-header-violet timeline-header-wrapper-item'>{timeLineItem.role}</p>
