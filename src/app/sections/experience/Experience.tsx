@@ -1,4 +1,5 @@
 import '../../components/common/Timeline/timeline.scss';
+import './experienceStyles.scss';
 import CustomTimeLineItem from '@/app/components/common/Timeline/CustomTimelineItem';
 import React from 'react';
 
@@ -84,7 +85,7 @@ const experieceDate:Array<ITimeLineItem> = [
 
 const Experience = () => {
   return (
-    <div className='max-w-[1200px]'>
+    <div className='experience max-w-[1200px]'>
         <p className='section-header'>Experience</p>
         <div className='m-auto flex flex-row justify-between'>
             <div className="timeline relative border-s border-gray-200 dark:border-gray-700">       
