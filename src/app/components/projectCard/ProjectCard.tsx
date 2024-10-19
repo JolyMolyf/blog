@@ -42,11 +42,6 @@ const ProjectCard = (props:Props) => {
         router.push(project.url);
     }
 
-    useEffect(() => {
-        divAnimation.start('hover');
-            imageAnimation.start('hover');
-    }, [])
-
     return (
         <div className='projectCard' 
         onClick={handleCardClick}
