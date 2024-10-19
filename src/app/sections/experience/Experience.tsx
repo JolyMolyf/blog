@@ -81,7 +81,7 @@ const experieceDate:Array<ITimeLineItem> = [
       techStack: ['React', 'Typescript', 'Redux', 'Rxjs'],
       startDate: new Date('01-06-2021')
     }
-  ]
+]
 
 const Experience = () => {
   return (
