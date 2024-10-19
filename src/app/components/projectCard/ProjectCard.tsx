@@ -14,7 +14,7 @@ const divVariants = {
     hover: {
        opacity: '100%',
        display: 'block',
-       left: '51px',
+       left: '50.5px',
       },
     initial: {
         opacity: '0',
@@ -28,7 +28,7 @@ const imageVariants = {
         filter: 'brightness(40%)',
        },
      initial: {
-        filter: 'brightness(98%)',
+        filter: 'brightness(100%)',
      }
 }
 

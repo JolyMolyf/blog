@@ -11,6 +11,11 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 
     &-wrapper {
         color: $lightBlue;
