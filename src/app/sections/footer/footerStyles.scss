@@ -1,0 +1,11 @@
+@use '../../globals.scss' as global;
+
+.footer {
+    margin-top: 100px;
+    width: 100vw;
+    height: 40px;
+    background-color: global.$mainViolet;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}

@@ -1,0 +1,48 @@
+@use '../../globals.scss' as global;
+
+.contact {
+    margin-top: 50px;
+    .section-header {
+        margin-bottom: 0 !important;
+    }
+
+    &-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        img {
+            width: 50px;
+            margin: 20px 0;
+        }
+    }
+
+    &-methods {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 100px;
+        
+        &-card {
+            cursor: pointer;
+            width: 230px;
+            height: 180px;
+            border: 2px solid global.$mainViolet;
+            border-radius: 14px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &-icon {
+                width: 30px;
+                height: 30px;
+                padding: 5px;
+                border-radius: 8px;
+                border: 1.5px solid global.$mainViolet;
+            }
+        }
+    }
+}

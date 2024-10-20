@@ -16,7 +16,7 @@ export interface IProject {
 const projects:Array<IProject> = [
     { 
         title: 'Project for RICG sp. z.o.o', 
-        role: 'Fullstack Javascript developer', 
+        role: 'Fullstack Javascript Developer', 
         techSatck: ['React', 'TypeScript', 'Redux', 'Stripe', 'Strapi', 'Scss', 'Amazon S3'], 
         description: 'Developed from scratch online e-commerce and e-learning platform', 
         coverImage: './images/project_image.png', 

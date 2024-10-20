@@ -45,16 +45,20 @@ const ProjectCard = (props:Props) => {
         <div className='projectCard' 
         onClick={handleCardClick}
         onMouseLeave={() => {
+            divAnimation.stop();
+            imageAnimation.stop()
             divAnimation.start('initial');
             imageAnimation.start('initial');
         }}
         onMouseEnter={() => {
+            divAnimation.stop();
+            imageAnimation.stop()
             divAnimation.start('hover');
             imageAnimation.start('hover');
         }}
         >
-            <motion.img animate={imageAnimation} variants={imageVariants} src={project.coverImage}/>
-            <motion.div transition={{ type:'spring', stiffness:60, ease: 'easeInOut', duration: 0.3}} variants={divVariants} className='projectCard-info' animate={divAnimation}>
+            <motion.img transition={{delay: 0.3}} animate={imageAnimation} variants={imageVariants} src={project.coverImage}/>
+            <motion.div transition={{ type:'spring', stiffness: 70, ease: 'easeInOut', duration: 0.3, delay: 0.3}} variants={divVariants} className='projectCard-info' animate={divAnimation}>
                 <div>
                     <p className='section-small-header projectCard-info-text'>{project.title}</p>
                     <p className='highlighted-main-text projectCard-info-text'>{project.role}</p>
