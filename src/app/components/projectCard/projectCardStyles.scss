@@ -30,27 +30,18 @@
         left: -600px;
         padding: 20px;
         z-index: 2;
-        width: 45%;
-        height: 539px;
+        width: 35%;
+        height: 540px;
         background-color: #fff;
-        border-radius: 32px;
-        transform: skewX(12deg);
-
-
-        .techStackPill {
-            transform: skew(-12deg);
-        }
-
-        &-text {
-            transform: skew(-12deg);
-        }
+        border-radius: 24px;
+        min-width: 350px;
+        overflow-y: scroll;
 
         img {
             position: relative;
-            margin-top: 5px;
+            margin: 5px 10px;
             width: 15px;
             height: 15px;
-            transform: skew(-12deg);
         }
 
         &-bullet {

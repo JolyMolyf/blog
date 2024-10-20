@@ -1,6 +1,5 @@
 'use client';
 import './projectCardStyles.scss';
-import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion, useAnimation } from 'framer-motion';
 import { IProject } from '@/app/sections/projects/Projects';
@@ -14,7 +13,7 @@ const divVariants = {
     hover: {
        opacity: '100%',
        display: 'block',
-       left: '50.5px',
+       left: '0',
       },
     initial: {
         opacity: '0',
