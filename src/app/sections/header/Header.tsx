@@ -11,7 +11,7 @@ const Header = () => {
     <>
         <Menubar/>
         <div className='header max-w-[1200px] m-auto flex flex-row justify-between'>
-            <div className='header-left-wrapper max-w-[45%]'>
+            <div className='header-left-wrapper'>
                 <div className='mb-[8vh]'>
                     <p className='text-4xl font-light mb-[0px]'>Hello, I am</p>
                     <p className='text-mainViolet text-[64px] font-bold'>Seabstian</p>

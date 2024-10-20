@@ -15,7 +15,7 @@ const FeatureCard = (props:IProps) => {
         <div className='featureCard' key={index}>
             <div className='featureCard-wrapper'>
                 <div className='featureCard-wrapper-title'>
-                    <p className='text-white font-bold text-5xl'>{ skill.title }</p>
+                    <p className='text-white font-bold'>{ skill.title }</p>
                     <p className='inline-block text-xl'>{ skill?.subTitle }</p>
                 </div>
                 <p className='text-sm text-center'> { skill?.description } </p>
