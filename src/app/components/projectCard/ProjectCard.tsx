@@ -46,7 +46,7 @@ const ProjectCard = (props:Props) => {
         onClick={handleCardClick}
         onMouseLeave={() => {
             divAnimation.stop();
-            imageAnimation.stop()
+            imageAnimation.stop();
             divAnimation.start('initial');
             imageAnimation.start('initial');
         }}

@@ -5,11 +5,27 @@
         width: 45%;
     }
     &-right-wrapper {
-        margin-top: 15vh;
+        margin-top: 10vh;
         width: 40%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
         padding-bottom: 20px;
+    }
+
+    &-scroll {
+        width: 100px;
+        height: 40px;
+        margin: 50px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        
+        img {
+            margin: 10px 0;
+            width: 25px;
+        }
     }
 }

@@ -35,6 +35,10 @@ const Header = () => {
                 }) }
             </div>
         </div>
+        <div className='header-scroll'>
+            <p className='highlighted-main-text-smaller'>Scroll down</p>
+            <img src='./icons/angles-down-solid.svg'/>
+        </div>
   </>
   )
 }
