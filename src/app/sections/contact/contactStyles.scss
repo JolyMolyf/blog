@@ -37,13 +37,41 @@
             flex-direction: column;
             justify-content: space-between;
             margin: 10px;
-            
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.05);
+                background-color: global.$mainViolet;
+                color: #fff;
+
+                .contact-methods-card-icon {
+                    border-color: #fff;
+                    fill: green;
+                }
+
+                .highlighted-main-text {
+                    color: #fff;
+                }
+
+                .icon-initial {
+                    display: none;
+                }
+
+                .icon-hover {
+                    display: block;
+                }
+            }
+
             &-icon {
                 width: 30px;
                 height: 30px;
                 padding: 5px;
                 border-radius: 8px;
                 border: 1.5px solid global.$mainViolet;
+
+                .icon-hover {
+                    display: none;
+                }
             }
         }
     }
