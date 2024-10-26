@@ -9,27 +9,6 @@ interface Props {
     project: IProject;
 }
 
-const divVariants = {
-    hover: {
-       opacity: '100%',
-       display: 'block',
-       left: '0',
-      },
-    initial: {
-        opacity: '0',
-        display: 'none',
-         left: '-600px'
-    }
-}
-
-const imageVariants = {
-    hover: {
-        filter: 'brightness(40%)',
-       },
-     initial: {
-        filter: 'brightness(100%)',
-     }
-}
 
 const ProjectCard = (props:Props) => {
     const { project } = props;
@@ -57,8 +36,8 @@ const ProjectCard = (props:Props) => {
             imageAnimation.start('hover');
         }}
         >
-            <motion.img transition={{delay: 0.3}} animate={imageAnimation} variants={imageVariants} src={project.coverImage}/>
-            <motion.div transition={{ type:'spring', stiffness: 70, ease: 'easeInOut', duration: 0.3, delay: 0.3}} variants={divVariants} className='projectCard-info' animate={divAnimation}>
+            <img src={project.coverImage}/>
+            <div className='projectCard-info'>
                 <div>
                     <p className='section-small-header projectCard-info-text'>{project.title}</p>
                     <p className='highlighted-main-text projectCard-info-text'>{project.role}</p>
@@ -77,7 +56,7 @@ const ProjectCard = (props:Props) => {
                     })}
                 </div>
                 
-            </motion.div>
+            </div>
         </div>
     )
 }
