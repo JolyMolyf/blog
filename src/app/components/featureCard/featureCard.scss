@@ -5,7 +5,7 @@
     height: 195px;
     border-radius: 20px;
     background-color: $mainViolet;
-    margin: 10px;
+    margin: 10px auto;
 
     display: flex;
     justify-content: center;
@@ -13,12 +13,12 @@
     flex-wrap: wrap;
     transition: 0.3s ease-in-out;
 
-    font-size: 64px;
+    font-size: 48px;
 
     @media screen and (max-width: 480px) {  
-        width: 150px;
-        height: 138px;
-        font-size: 48px;
+        width: 130px;
+        height: 118px;
+        font-size: 32px;
     }
 
     &:hover {
