@@ -71,7 +71,7 @@ const Contact = () => {
                             <div className='contact-methods-card-body'>
                                 <p className='highlighted-main-text bold'>{method.name}</p>
                                 <p className='main-text-light'>{method.description}</p>
-                                <p className='main-text-smaller bold'>{method.value}</p>
+                                <p className='main-text-light bold'>{method.value}</p>
                             </div>
                         </div>
                     )
