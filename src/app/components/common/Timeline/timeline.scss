@@ -22,7 +22,8 @@
             }
 
             &-item {
-                margin: 0 10px;
+                margin-right: 10px;
+                margin-bottom: 7px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -41,15 +42,15 @@
     &-achievements {
         width: 80%;
         overflow: hidden;
-        margin: 10px;
+        margin: 5px;
         &-item {
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            margin: 15px 10px;
+            margin: 10px 5px;
 
             img {
-                margin: 5px 10px;
+                margin: 5px 8px;
                 width: 12px;
             }
         }
