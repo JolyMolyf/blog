@@ -1,6 +1,7 @@
 @use '../../globals.scss' as global;
 
 .projectCard {
+    border-radius: 24px;
     position: relative;
     height: 550px;
     margin: 10px auto;
