@@ -26,6 +26,7 @@ section {
   // scroll-snap-align: center;
   max-width: 1200px;
   margin: 20px auto;
+  width: 98%;
 }
 
 .hover-underline-animation {
@@ -68,6 +69,11 @@ section {
     font-size: 48px;
     margin-bottom: 0;
   }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {  
+    font-size: 52px;
+    margin-bottom: 0;
+  }
 }
 
 .section-header {
@@ -79,6 +85,11 @@ section {
 
   @media screen and (max-width: 480px) {  
     font-size: 38px;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {  
+    font-size: 44px;
+    margin-bottom: 0;
   }
 }
 
@@ -92,6 +103,12 @@ section {
     margin: 0;
     margin-right: 10px;
   }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {  
+    font-size: 32px;
+    margin: 0;
+    margin-right: 10px;
+  }
 }
 
 .section-small-header {
@@ -102,13 +119,17 @@ section {
   @media screen and (max-width: 480px) {  
     font-size: 18px;
   }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {  
+    font-size: 20px;
+  }
 }
 
 .section-small-header-violet {
   color: $mainViolet;
   font-size: 22px;
   font-weight: 600;
-
+  display: inline;
   @media screen and (max-width: 480px) {  
     font-size: 18px;
   }
@@ -120,6 +141,9 @@ section {
 
   @media screen and (max-width: 480px) {
     font-size: 13px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    font-size: 14px;
   }
 }
 
@@ -141,6 +165,10 @@ section {
   @media screen and (max-width: 480px) {
     font-size: 14px;
   }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .highlighted-main-text {
@@ -149,6 +177,10 @@ section {
 
   @media screen and (max-width: 480px) {
     font-size: 16px;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    font-size: 18px;
   }
 }
 

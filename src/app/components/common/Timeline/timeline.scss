@@ -11,7 +11,7 @@
 
         &-wrapper {
             display: flex;
-            align-items: baseline;
+            align-items: center;
 
             @media screen and (max-width: 480px) {  
                 flex-wrap: wrap;
@@ -23,7 +23,6 @@
 
             &-item {
                 margin-right: 10px;
-                margin-bottom: 7px;
                 display: flex;
                 justify-content: center;
                 align-items: center;

@@ -68,7 +68,7 @@ const experieceDate:Array<ITimeLineItem> = [
     },
     {
       companyName: 'S&T',
-      projectName: 'Mobile Network Support CRM',
+      projectName: 'Mobile Network Support',
       location: 'Kyiv',
       role: 'Intern',
       description: 'Developed equity pre trade platform for in-house use of CITI bank traders and sales',

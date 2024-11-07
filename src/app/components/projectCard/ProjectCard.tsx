@@ -21,23 +21,12 @@ const ProjectCard = (props:Props) => {
     }
 
     return (
-        <div className='projectCard' 
-        onClick={handleCardClick}
-        onMouseLeave={() => {
-            divAnimation.stop();
-            imageAnimation.stop();
-            divAnimation.start('initial');
-            imageAnimation.start('initial');
-        }}
-        onMouseEnter={() => {
-            divAnimation.stop();
-            imageAnimation.stop()
-            divAnimation.start('hover');
-            imageAnimation.start('hover');
-        }}
-        >
-            <img src={project.coverImage}/>
-            <div className='projectCard-info'>
+        <div className='projectCard'>
+            <img className='projectCard-background' src={project.coverImage}/>
+            <div className='projectCard-icon'>
+                <img src="./icons/hand-pointer-solid.svg"/>
+            </div>
+            <div className='projectCard-info' onClick={handleCardClick}>
                 <div>
                     <p className='section-small-header projectCard-info-text'>{project.title}</p>
                     <p className='highlighted-main-text projectCard-info-text'>{project.role}</p>
