@@ -1,24 +1,28 @@
-import React from 'react'
+'use client';
+import React from 'react';
 import './Menubar.scss';
-import Downloadicon from '../icons/Downloadicon'
+import Downloadicon from '../icons/Downloadicon';
+import { useRouter } from 'next/navigation';
 
 interface Props {}
 
 const Menubar = () => {
-  return (
-    <div className='menu'>
+    const router = useRouter();
+    return (
+
+    <div className='menu' onClick={() => {router.push('/')}}>
         <div className='menu-item font-bold flex flex-row justify-start'>
-          <p className='hover-underline-animation'>Seb.tech</p>
+            <p className='hover-underline-animation'>Seb.tech</p>
         </div>
-        <div className='menu-item menu-item-clickable flex flex-row items-center'>
-          <p className='mx-2 hover-underline-animation'>CV</p>
-          <Downloadicon/>
+        <div className='menu-item menu-item-clickable flex flex-row items-center' onClick={() => {router.push('https://drive.google.com/file/d/1-VpEKM5NdTDnMAAlxDrikMgyFfJgHSHx/view?usp=sharing')}}>
+            <p className='mx-2 hover-underline-animation'>CV</p>
+            <Downloadicon/>
         </div>
-        <div className='menu-item menu-item-clickable flex flex-row'>
-          <p className='hover-underline-animation'>Blog</p>
+        <div className='menu-item menu-item-clickable flex flex-row' onClick={() => {router.push('/blog')}}>
+            <p className='hover-underline-animation'>Blog</p>
         </div>     
     </div>
-  )
+)
 }
 
 export default Menubar
