@@ -1,7 +1,6 @@
 'use client';
 import './projectCardStyles.scss';
 import { useRouter } from 'next/navigation';
-import { motion, useAnimation } from 'framer-motion';
 import { IProject } from '@/app/sections/projects/Projects';
 import TechStackisplay from '../common/Timeline/techStackDisplay/TechStackDisplay';
 
@@ -12,8 +11,6 @@ interface Props {
 
 const ProjectCard = (props:Props) => {
     const { project } = props;
-    const divAnimation = useAnimation();
-    const imageAnimation = useAnimation()
     const router = useRouter();
 
     const handleCardClick = () => {
