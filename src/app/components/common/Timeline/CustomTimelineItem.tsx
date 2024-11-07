@@ -39,7 +39,7 @@ const CustomTimeLineItem = (props:IProps) => {
                     </div>
                     
                 </div>
-                <div className='timeline-achievements' style={{height: isCollapsed ? 42 : ''}}>
+                <div className='timeline-achievements' style={{height: isCollapsed ? 0 : ''}}>
                     {timeLineItem.bulletPoints.map((bulletPoint, index) => {
                         return (
                             <div className='timeline-achievements-item' key={index} >
