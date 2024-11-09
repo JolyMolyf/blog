@@ -8,13 +8,14 @@ interface Props {}
 
 const Menubar = () => {
     const router = useRouter();
-    const handleCvDownload = () => {
+    const handleCvDownload = (e:any) => {
+        e.preventDefault();
         router.push('https://drive.google.com/file/d/1-VpEKM5NdTDnMAAlxDrikMgyFfJgHSHx/view?usp=sharing')
     }
     return (
 
-    <div className='menu' onClick={() => {router.push('/')}}>
-        <div className='menu-item font-bold flex flex-row justify-start'>
+    <div className='menu'>
+        <div className='menu-item font-bold flex flex-row justify-start' onClick={() => {router.push('/')}}>
             <p className='hover-underline-animation'>Seb.tech</p>
         </div>
         <div className='menu-item menu-item-clickable flex flex-row items-center' onClick={handleCvDownload}>
