@@ -19,7 +19,7 @@ const projects:Array<IProject> = [
         role: 'Fullstack Javascript Developer', 
         techSatck: ['React', 'TypeScript', 'Redux', 'Stripe', 'Strapi', 'Scss', 'Amazon S3'], 
         description: 'Developed from scratch online e-commerce and e-learning platform', 
-        coverImage: './images/project_image.png', 
+        coverImage: './images/project_image.webp', 
         url: 'https://szkolenia.ricg.eu/',
         bulletpoints: [
           'Integrated Stripe to enable all popular payment methods such as BLIK, Apple/Google pay, Przelewy24.',

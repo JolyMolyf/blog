@@ -17,7 +17,7 @@ const Button = (props: Props) => {
     return (
         <div className='button' onClick={handleClick}>
             <p className='main-text-higlight'>{ label }</p>
-            <img src={icon}/>
+            <img alt='button icon' src={icon}/>
         </div>
     ); 
 }

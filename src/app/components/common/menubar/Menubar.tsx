@@ -16,7 +16,7 @@ const Menubar = () => {
 
     <div className='menu'>
         <div className='menu-item font-bold flex flex-row justify-start' onClick={() => {router.push('/')}}>
-            <p className='hover-underline-animation'>Seb.tech</p>
+            <p className='hover-underline-animation'>Joly.tech</p>
         </div>
         <div className='menu-item menu-item-clickable flex flex-row items-center' onClick={handleCvDownload}>
             <p className='mx-2 hover-underline-animation'>CV</p>

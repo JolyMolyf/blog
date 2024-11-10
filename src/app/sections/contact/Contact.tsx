@@ -56,7 +56,7 @@ const Contact = () => {
     return (
         <div className='max-w-[1200px] contact'>
             <div className='contact-header'>
-                <img src='./icons/code-solid.svg'/>
+                <img alt='section icon' src='./icons/code-solid.svg'/>
                 <p className='section-header'>Contact Me</p>
                 <p className='main-text'>Would be glad to here back from you</p>
             </div>
@@ -65,8 +65,8 @@ const Contact = () => {
                     return (
                         <div className='contact-methods-card' key={index} onClick={() => {handleCardClick(method.url)}}>
                             <div className='contact-methods-card-icon'>
-                                <img className='icon-initial' src={method.icon}/>
-                                <img className='icon-hover' src={method.hoverIcon}/>
+                                <img alt={`${method.name} icon`} className='icon-initial' src={method.icon}/>
+                                <img alt={`${method.name} icon`} className='icon-hover' src={method.hoverIcon}/>
                             </div>
                             <div className='contact-methods-card-body'>
                                 <p className='highlighted-main-text bold'>{method.name}</p>

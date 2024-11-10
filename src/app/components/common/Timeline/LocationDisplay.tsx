@@ -11,7 +11,7 @@ const LocationDisplay = (props: Props) => {
     
     return  (
         <div className={`locationDisplay ${className}`}>
-            <img src='./icons/location-dot-solid.svg'></img>
+            <img alt="location pin icon" src='./icons/location-dot-solid.svg'></img>
             <p className=''>{location}</p>
         </div>
     )

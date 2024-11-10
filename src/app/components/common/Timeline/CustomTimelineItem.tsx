@@ -43,7 +43,7 @@ const CustomTimeLineItem = (props:IProps) => {
                     {timeLineItem.bulletPoints.map((bulletPoint, index) => {
                         return (
                             <div className='timeline-achievements-item' key={index} >
-                                <img src='./icons/fingerprint-solid.svg'/>
+                                <img alt='click icon' src='./icons/fingerprint-solid.svg'/>
                                 <p className='main-text'>
                                     {bulletPoint}
                                 </p>

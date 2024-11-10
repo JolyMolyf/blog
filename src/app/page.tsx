@@ -4,6 +4,7 @@ import Experience from './sections/experience/Experience';
 import Projects from './sections/projects/Projects';
 import Contact from './sections/contact/Contact';
 import Footer from './sections/footer/Footer';
+import Head from 'next/head';
 
 interface Props {}
 

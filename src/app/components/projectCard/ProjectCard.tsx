@@ -19,7 +19,7 @@ const ProjectCard = (props:Props) => {
 
     return (
         <div className='projectCard'>
-            <img className='projectCard-background' src={project.coverImage}/>
+            <img alt='project card background image' className='projectCard-background' src={project.coverImage}/>
             <div className='projectCard-icon'>
                 <img src="./icons/hand-pointer-solid.svg"/>
             </div>
@@ -33,7 +33,7 @@ const ProjectCard = (props:Props) => {
                     {project.bulletpoints.map((bulletPoint, index) => {
                         return (
                             <div className='projectCard-info-bullet' key={index} >
-                                <img src='./icons/fingerprint-solid.svg'/>
+                                <img alt='click project card icon' src='./icons/fingerprint-solid.svg'/>
                                 <p className='main-text projectCard-info-text'>
                                     {bulletPoint}
                                 </p>
