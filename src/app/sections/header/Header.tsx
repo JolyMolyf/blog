@@ -3,6 +3,7 @@ import React from 'react';
 import './header.scss';
 import { skillSet } from '@/app/utils/consts/skillSet';
 import Menubar from '@/app/components/common/menubar/Menubar';
+import { Reveal } from '@/app/components/animation/Reveal';
 
 interface Props {}
 
@@ -13,7 +14,8 @@ const Header = () => {
         <div className='header'>
             <div className='header-left-wrapper'>
                 <div className='header-left-wrapper-title'>
-                    <p className='text-4xl font-light mb-[0px]'>Hello, I am</p>
+                    <Reveal><p className='text-4xl font-light mb-[0px]'>Hello, I am</p></Reveal>
+                    
                     <p className='section-biggest-violet-text bold'>Seabstian</p>
                     <p className='text-s font-light'>Javascript developer</p>
                 </div>
