@@ -1,3 +1,4 @@
+import { Reveal } from '@/app/components/animation/Reveal';
 import ProjectCard from '@/app/components/projectCard/ProjectCard';
 import React from 'react'
 
@@ -32,14 +33,20 @@ const projects:Array<IProject> = [
 
 const Projects = () => {
   return <div className='projects'>
-    <p className='section-header'>Projects</p>
-    {projects.map((project, index: number) => {
-        return (
-            <div key={index}>
-                <ProjectCard project={project}/>
-            </div>
-        )
-    })}
+    <Reveal direction='bottom'>
+      <p className='section-header'>Projects</p>
+    </Reveal>
+   
+      {projects.map((project, index: number) => {
+          return ( 
+          <Reveal direction='top'>
+              <div key={index}>
+                    <ProjectCard project={project}/>
+              </div>
+            </Reveal>
+          )
+      })}
+  
   </div>
 }
 
