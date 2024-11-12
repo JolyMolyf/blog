@@ -1,5 +1,5 @@
-import Menubar from "./components/common/menubar/Menubar";
 import "./globals.scss";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = {
   title: 'Joly.tech',
@@ -15,6 +15,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
+        <SpeedInsights/>
         </body>
     </html>
   )
