@@ -63,25 +63,25 @@ const Contact = () => {
                     <p className='main-text'>Would be glad to here back from you</p>
                 </div>
             </Reveal>
-            <Reveal direction='top'>
-                <div className='contact-methods'>
+            <div className='contact-methods'>
                     {contactMethods.map((method, index) => {
                         return (
-                            <div className='contact-methods-card' key={index} onClick={() => {handleCardClick(method.url)}}>
-                                <div className='contact-methods-card-icon'>
-                                    <img alt={`${method.name} icon`} className='icon-initial' src={method.icon}/>
-                                    <img alt={`${method.name} icon`} className='icon-hover' src={method.hoverIcon}/>
+                            <Reveal direction='top' delay={0.5}>
+                                <div className='contact-methods-card' key={index} onClick={() => {handleCardClick(method.url)}}>
+                                    <div className='contact-methods-card-icon'>
+                                        <img alt={`${method.name} icon`} className='icon-initial' src={method.icon}/>
+                                        <img alt={`${method.name} icon`} className='icon-hover' src={method.hoverIcon}/>
+                                    </div>
+                                    <div className='contact-methods-card-body'>
+                                        <p className='highlighted-main-text bold'>{method.name}</p>
+                                        <p className='main-text-light'>{method.description}</p>
+                                        <p className='main-text-light bold'>{method.value}</p>
+                                    </div>
                                 </div>
-                                <div className='contact-methods-card-body'>
-                                    <p className='highlighted-main-text bold'>{method.name}</p>
-                                    <p className='main-text-light'>{method.description}</p>
-                                    <p className='main-text-light bold'>{method.value}</p>
-                                </div>
-                            </div>
+                            </Reveal>
                         )
                     })}
                 </div>
-            </Reveal>
         </div>
     )
 }

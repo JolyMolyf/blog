@@ -10,10 +10,10 @@ $mainViolet: #A1B5D8;
 $secondaryBlue: #33658A;
 $lightBlue: #eff7ff;
 
-// html {
-//   // scroll-snap-type: y mandatory;
-//   // scroll-behavior: smooth;
-// }
+html {
+  // scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
