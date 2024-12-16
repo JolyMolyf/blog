@@ -9,6 +9,9 @@ import { Reveal } from '@/app/components/animation/Reveal';
 const Header = () => {
   return (
     <>
+         <Reveal direction="bottom">
+            <Menubar/>
+        </Reveal>
         <div className='header'>
             <div className='header-left-wrapper'>
                 <Reveal direction='right'>

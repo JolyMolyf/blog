@@ -1,6 +1,4 @@
 import "./globals.scss";
-import { Reveal } from "./components/animation/Reveal";
-import Menubar from "./components/common/menubar/Menubar";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = {
@@ -16,9 +14,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Reveal direction="bottom">
-            <Menubar/>
-        </Reveal>
         {children}
         <SpeedInsights/>
         </body>
