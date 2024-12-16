@@ -44,7 +44,7 @@
         margin: 5px;
         &-item {
             display: flex;
-            justify-content: center;
+            // justify-content: center;
             align-items: flex-start;
             margin: 10px 5px;
 
@@ -68,5 +68,10 @@
             line-height: 20px;
         }
 
+    }
+
+    &-actions .button{
+
+        justify-content: space-between;
     }
 }

@@ -4,15 +4,14 @@ import { ISkillSetItem } from '@/app/utils/consts/skillSet';
 
 interface IProps {
     skill: ISkillSetItem;
-    index: number;
 }
 
 const FeatureCard = (props:IProps) => {
 
-    const { skill, index } = props;
+    const { skill } = props;
  
     return (
-        <div className='featureCard' key={index}>
+        <div className='featureCard'>
             <div className='featureCard-wrapper'>
                 <div className='featureCard-wrapper-title'>
                     <p className='text-white font-bold'>{ skill.title }</p>
@@ -21,7 +20,7 @@ const FeatureCard = (props:IProps) => {
                 <p className='text-sm text-center'> { skill?.description } </p>
             </div>
         </div>
-    )
+)
 }
 
 export default FeatureCard

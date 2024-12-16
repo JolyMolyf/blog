@@ -53,9 +53,12 @@ const CustomTimeLineItem = (props:IProps) => {
                             )
                         })}
                     </div>
-                    <div className='timeline-actions'>
-                        <Button label={ isCollapsed ? 'Expand' : 'Collapse' } icon={isCollapsed ? './icons/chevron-down-solid.svg' : './icons/chevron-up-solid.svg'} onClick={handleClick}/>
-                    </div>
+                    { timeLineItem.bulletPoints.length > 0 && (
+                        <div className='timeline-actions'>
+                            <Button label={ isCollapsed ? 'Achievements' : 'Collapse' } icon={isCollapsed ? './icons/chevron-down-solid.svg' : './icons/chevron-up-solid.svg'} onClick={handleClick}/>
+                        </div>
+                    ) }
+                   
                 </div>
             </Reveal>
         </div>

@@ -66,7 +66,7 @@ const Contact = () => {
             <div className='contact-methods'>
                     {contactMethods.map((method, index) => {
                         return (
-                            <Reveal direction='top' delay={0.5}>
+                            <Reveal key={index} direction='top' delay={0.5}>
                                 <div className='contact-methods-card' key={index} onClick={() => {handleCardClick(method.url)}}>
                                     <div className='contact-methods-card-icon'>
                                         <img alt={`${method.name} icon`} className='icon-initial' src={method.icon}/>

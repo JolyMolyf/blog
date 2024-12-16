@@ -6,20 +6,15 @@ import { skillSet } from '@/app/utils/consts/skillSet';
 import Menubar from '@/app/components/common/menubar/Menubar';
 import { Reveal } from '@/app/components/animation/Reveal';
 
-interface Props {}
-
 const Header = () => {
   return (
     <>
-        <Reveal direction="bottom">
-            <Menubar/>
-        </Reveal>
         <div className='header'>
             <div className='header-left-wrapper'>
                 <Reveal direction='right'>
                     <div className='header-left-wrapper-title'>
                         <Reveal direction="top" delay={0.5}><p className='text-4xl font-light mb-[0px]'>Hello, I am</p></Reveal>
-                        <p className='section-biggest-violet-text bold'>Seabstian</p>
+                        <p className='section-biggest-violet-text bold'>Vsevolod</p>
                         <p className='text-s font-light'>Javascript developer</p>
                     </div>
                 </Reveal>
@@ -39,16 +34,12 @@ const Header = () => {
                 <div className='header-right-wrapper'>
                     { skillSet.map((skill, index) => {
                         return (
-                            <FeatureCard skill={skill} index={index}/>
+                            <FeatureCard key={index} skill={skill}/>
                         )
                     }) }
                 </div>
             </Reveal>
         </div>
-        {/* <div className='header-scroll'>
-            <p className='highlighted-main-text-smaller'>Scroll down</p>
-            <img alt="scroll down icon" src='./icons/angles-down-solid.svg'/>
-        </div> */}
   </>
   )
 }
