@@ -1,8 +1,7 @@
+import "./globals.scss";
 import { Reveal } from "./components/animation/Reveal";
 import Menubar from "./components/common/menubar/Menubar";
-import "./globals.scss";
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import Footer from "./sections/footer/Footer";
 
 export const metadata = {
   title: 'Joly.tech',
