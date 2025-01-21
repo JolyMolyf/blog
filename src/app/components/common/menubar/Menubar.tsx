@@ -6,11 +6,13 @@ import { useRouter } from 'next/navigation';
 
 interface Props {}
 
+const CV_URL = 'https://drive.google.com/file/d/1_TU8o4Tcz_CrxJbT_l5ZuO-7CBXgJ0Sf/view?usp=sharing';
+
 const Menubar = () => {
     const router = useRouter();
     const handleCvDownload = (e:any) => {
         e.preventDefault();
-        router.push('https://drive.google.com/file/d/1-VpEKM5NdTDnMAAlxDrikMgyFfJgHSHx/view?usp=sharing')
+        router.push(CV_URL)
     }
     return (
 
